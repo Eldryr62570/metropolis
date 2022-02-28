@@ -1,0 +1,113 @@
+/* 
+Palette :
+ #35012C  
+ #290025
+ #11001C
+
+*/
+
+@font-face {
+  font-family: Bebas;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: Titi;
+  src: url("../fonts/TitilliumWeb-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  font-family: Bebas;
+}
+.header {
+  display: flex;
+  height: 10vh;
+  background-color: #11001c;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  height: 100%;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  transition: 250ms ease-in-out;
+}
+.button:hover {
+  background-color: #edb75b;
+}
+.logo {
+  height: 90vh;
+  background-image: url("../img/background2.jpg");
+  background-position: 50% 75%;
+  background-size: cover;
+}
+.filter {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.filter img {
+  height: 50%;
+  width: auto;
+}
+.titleText {
+  display: flex;
+  justify-content: center;
+}
+.titleText1 > div {
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+  padding-top: 1em;
+  background-color: #11001c;
+  color: #faab2e;
+}
+.text1 {
+  background-color: #11001c;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 49% 2% 49%;
+  grid-template-rows: 100%;
+}
+.separatorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator {
+  height: 80%;
+  width: 2px;
+  background-color: rgba(88, 88, 88, 0.61);
+  border-radius: 75%;
+}
+.imgText1Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgText1Container > img {
+  width: 90%;
+  height: auto;
+}
+.imgText1Container > p {
+  max-width: 90%;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Titi;
+  color: white;
+}
