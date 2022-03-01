@@ -26,6 +26,10 @@ a {
 }
 body {
   font-family: Bebas;
+  overflow-x: hidden;
+}
+section {
+  height: 100px;
 }
 .header {
   display: flex;
@@ -46,6 +50,7 @@ body {
 .button:hover {
   background-color: #edb75b;
 }
+/* Section 1 */
 .logo {
   height: 90vh;
   background-image: url("../img/background2.jpg");
@@ -65,6 +70,7 @@ body {
   height: 50%;
   width: auto;
 }
+/* Section 2 */
 .titleText {
   display: flex;
   justify-content: center;
@@ -106,8 +112,14 @@ body {
 }
 .imgText1Container > p {
   max-width: 90%;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 400;
   font-family: Titi;
   color: white;
 }
+/* Parallax */
+.parallax-window {
+  min-height: 250px;
+  background: transparent;
+}
+/* Section 3 */
