@@ -36,6 +36,9 @@ section {
   height: 10vh;
   background-color: #11001c;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999999;
 }
 .button {
   display: flex;
@@ -123,3 +126,104 @@ section {
   background: transparent;
 }
 /* Section 3 */
+.text2 {
+  height: 80vh;
+  background-color: #290025;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.text2 .part1 {
+  display: grid;
+  flex-direction: column;
+}
+.titleText2 {
+  height: 50px;
+}
+.titleText2 > div {
+  width: 100%;
+  text-align: center;
+  font-size: 3.7em;
+  padding-top: 0.5em;
+  background-color: #290025;
+  color: #faab2e;
+}
+.part2Container {
+  display: flex;
+  background-color: #000000;
+}
+.part2 {
+  background-image: url("../img/ironman.jpg");
+  background-size: cover;
+  height: 90%;
+  width: 50vw;
+  align-self: flex-end;
+}
+.text2 .imgText1Container {
+  height: fit-content;
+}
+.text2 .imgText1Container > p {
+  max-width: 90%;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Titi;
+  color: white;
+}
+/* Footer */
+footer {
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 15% 25% 60%;
+}
+footer i {
+  padding: 10px 30px 0 0;
+  transition: 250ms ease-in-out;
+}
+footer i:hover {
+  color: #edb75b;
+}
+.subfootertitle {
+  background-color: #35012c;
+  display: flex;
+  justify-content: center;
+}
+.subfootertitle > div {
+  font-size: 2.7em;
+  color: #faab2e;
+}
+.subfooter {
+  background-color: #35012c;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+}
+.footer {
+  background-color: #11001c;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+}
+.footerLeft {
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+  height: 80%;
+}
+.footerLeft div {
+  width: 80%;
+  height: 100%;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-left: 50%;
+}
+.footerLeft div:hover {
+  color: #edb75b;
+}
+.footerMiddle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4em;
+}
