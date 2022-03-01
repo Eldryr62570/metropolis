@@ -27,6 +27,7 @@ a {
 body {
   font-family: Bebas;
   overflow-x: hidden;
+  background-color: #11001c;
 }
 section {
   height: 100px;
@@ -39,6 +40,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 999999;
+  transition: all 500ms ease-in-out;
 }
 .button {
   display: flex;
@@ -170,7 +172,7 @@ section {
 }
 /* Footer */
 footer {
-  height: 60vh;
+  height: 40vh;
   display: grid;
   grid-template-rows: 15% 25% 60%;
 }
@@ -180,19 +182,22 @@ footer i {
 }
 footer i:hover {
   color: #edb75b;
+  cursor: pointer;
 }
 .subfootertitle {
   background-color: #35012c;
   display: flex;
   justify-content: center;
+  padding-top: 0.7em;
 }
 .subfootertitle > div {
-  font-size: 2.7em;
+  font-size: 1.7em;
   color: #faab2e;
 }
 .subfooter {
   background-color: #35012c;
-  font-size: 5em;
+  font-size: 3em;
+  padding-top: 2px;
   color: white;
   text-align: center;
 }
@@ -219,6 +224,7 @@ footer i:hover {
 }
 .footerLeft div:hover {
   color: #edb75b;
+  cursor: pointer;
 }
 .footerMiddle {
   display: flex;
@@ -226,4 +232,43 @@ footer i:hover {
   align-items: center;
   color: white;
   font-size: 4em;
+}
+/* Responsive */
+@media only screen and (max-width: 700px) {
+  body {
+    min-width: 100vw;
+  }
+  .text1 {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 50px;
+  }
+  .separatorContainer {
+    display: none;
+  }
+  .imgText1Container > p {
+    font-size: 1em;
+    max-width: 70vw;
+  }
+  .titleText1 {
+    display: flex;
+    justify-content: center;
+  }
+  .titleText1 > div {
+    padding-top: 0.2em;
+    font-size: 2.8em;
+    width: 80%;
+  }
+  .parallax-window {
+    display: none;
+  }
+  .text2 {
+    display: none;
+  }
+  .footer {
+    grid-template-columns: 100%;
+  }
+  .footerLeft {
+    display: none;
+  }
 }
