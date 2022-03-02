@@ -1018,3 +1018,47 @@ footer i:hover {
   text-align: center;
   font-size: 3em;
 }
+.carouselFilms {
+  height: 30vh;
+  background-color: #35012c;
+}
+/* Carousel des films */
+.gallery {
+  background: #11001c;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 500px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 10px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 500px;
+  font-size: 80px;
+  color: white;
+}
+/* Page dots */
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/*circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
