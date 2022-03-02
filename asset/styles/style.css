@@ -32,6 +32,9 @@ body {
 section {
   height: 100px;
 }
+.logo_responsive {
+  display: none;
+}
 .header {
   display: flex;
   height: 10vh;
@@ -235,8 +238,30 @@ footer i:hover {
 }
 /* Responsive */
 @media only screen and (max-width: 700px) {
+  * {
+    overflow-x: hidden;
+  }
   body {
     min-width: 100vw;
+  }
+  .logo_responsive {
+    display: block;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .logo_responsive > img {
+    width: 100%;
+    max-height: 50vh;
+  }
+  .filter {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .button {
+    width: 30vw;
   }
   .text1 {
     grid-template-columns: 100%;
@@ -250,9 +275,12 @@ footer i:hover {
     font-size: 1em;
     max-width: 70vw;
   }
+
   .titleText1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
   }
   .titleText1 > div {
     padding-top: 0.2em;

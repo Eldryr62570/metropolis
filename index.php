@@ -33,10 +33,14 @@
         </a>
        
     </div>
+    
     <section class="logo">
         <div class="filter">
             <img src="asset/img/metropolis_black.jpg" alt="" >
         </div>
+    </section>
+    <section class="logo_responsive">
+        <img src="asset/img/metropolis_black.jpg" alt="">
     </section>
     <section class="titleText1">
         <div>Le ciné prés de chez vous !</div>
