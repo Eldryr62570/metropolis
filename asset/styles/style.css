@@ -356,7 +356,7 @@ footer i:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 400px;
+  width: 500px;
   height: 300px;
   transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -1016,5 +1016,5 @@ footer i:hover {
   color: white;
   width: 100%;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3em;
 }

@@ -21,11 +21,11 @@
                 
             <img class="coverflow__image"
                 src="asset/img/img_carousel/spiderman.jpg" /><img class="coverflow__image"
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/168886/bob-ross-3.jpg" /><img class="coverflow__image"
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/168886/bob-ross-4.jpg" /><img class="coverflow__image"
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/168886/bob-ross-5.jpg" /><img class="coverflow__image"
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/168886/bob-ross-6.jpg" /><img class="coverflow__image"
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/168886/bob-ross-7.jpg" /><a class="next-arrow"></a>
+                src="asset/img/img_carousel/batman.jpg" /><img class="coverflow__image"
+                src="asset/img/img_carousel/greenmiles.jpg" /><img class="coverflow__image"
+                src="asset/img/img_carousel/superman.jpg" /><img class="coverflow__image"
+                src="asset/img/img_carousel/evade.jpg" /><img class="coverflow__image"
+                src="asset/img/img_carousel/dixanneaux.jpg" /><a class="next-arrow"></a>
         </div>
     </div>
 
