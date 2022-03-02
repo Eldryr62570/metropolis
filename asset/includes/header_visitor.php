@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="header">
     <a href="#">
         <div class="button">
            Sign In
