@@ -32,6 +32,7 @@ body {
 section {
   height: 100px;
 }
+/* page index */
 .logo_responsive {
   display: none;
 }
@@ -98,6 +99,7 @@ section {
   grid-template-columns: 49% 2% 49%;
   grid-template-rows: 100%;
 }
+
 .separatorContainer {
   display: flex;
   align-items: center;
@@ -136,6 +138,9 @@ section {
   background-color: #290025;
   display: grid;
   grid-template-columns: 50% 50%;
+}
+.text2_responsive {
+  display: none;
 }
 .text2 .part1 {
   display: grid;
@@ -268,6 +273,25 @@ footer i:hover {
     grid-template-rows: 50% 50%;
     margin-bottom: 50px;
   }
+  .text2_responsive {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    color: white;
+    background-color: #35012c;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    text-align: center;
+  }
+  .text2_responsiveTitle {
+    font-size: 2.2em;
+    color: #faab2e;
+  }
+  .text2_responsiveText {
+    font-family: Titi;
+    width: 80%;
+  }
   .separatorContainer {
     display: none;
   }
@@ -275,7 +299,6 @@ footer i:hover {
     font-size: 1em;
     max-width: 70vw;
   }
-
   .titleText1 {
     display: flex;
     justify-content: center;
@@ -295,8 +318,16 @@ footer i:hover {
   }
   .footer {
     grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+  .titleFooter {
+    font-size: 0.8em;
   }
   .footerLeft {
     display: none;
   }
+  .fa-brands.fa-tiktok {
+    display: none;
+  }
 }
+/* page home */
