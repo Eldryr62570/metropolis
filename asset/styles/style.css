@@ -1142,3 +1142,47 @@ footer i:hover {
     font-size: 2em;
   }
 }
+/* Page movie */
+.movieTitleContainer {
+  display: grid;
+  height: 90vh;
+  background-color: #35012c;
+  grid-template:
+    "title syn"
+    "title author"
+    /70% 30%;
+}
+.moveTitle {
+  grid-area: title;
+  background-image: url("../img/avangers.jpg");
+  background-size: cover;
+}
+.filterTitle {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #0000008f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+.filterTitle:hover {
+  opacity: 1;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 5em;
+}
+.synopsis {
+  font-family: Titi;
+  color: white;
+  font-size: 1.7em;
+  width: 80%;
+  justify-self: center;
+  cursor: default;
+}
+.movieSynopsis {
+}

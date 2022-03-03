@@ -9,10 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="asset/styles/style.css">
     <link rel="stylesheet" href="asset/styles/slick.css">
-
-
-
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/31b5087217.js" crossorigin="anonymous"></script>
+    <title>VOD - Metropolis</title>
 </head>
 
 <body>
