@@ -11,14 +11,21 @@
         </div>
         <div class="footer">
             <div class="footerLeft">
+                <div class="categoriesF">Nos pages :</div>
                 <div>SIGN IN</div>
                 <div>SIGN UP</div>
-                <div>CONTACT US</div>
-                <div>ABOUT US</div>
+                <div>VOD</div>
+                <div>Vos favoris</div>
             </div>
             <div class="footerMiddle">
                 <div class="titleFooter">Metropolis&copy;</div>
             </div>
-            <div class="footerRight"></div>
+            <div class="footerLeft">
+                <div class="categoriesF">Client</div>
+                <div>Nous contacter</div>
+                <div>Centre d'aide</div>
+                <div>Partenariat</div>
+                <div>Mentions légales</div>
+            </div>
         </div>
     </footer>

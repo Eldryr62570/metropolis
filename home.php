@@ -36,7 +36,7 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" >
+                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
             </div>
             <div class="items">
                 <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" >
@@ -60,7 +60,7 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
             </div>
             <div class="items">
                 <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
@@ -84,7 +84,7 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
             </div>
             <div class="items">
                 <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
@@ -108,7 +108,7 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
             </div>
             <div class="items">
                 <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
