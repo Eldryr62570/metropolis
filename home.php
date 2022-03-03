@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <?php include("asset/includes/header.php")?>
     <div class="texteimage">TETESTST</div>
     <!-- Carousel 3d -->
@@ -32,19 +32,104 @@
         </div>
     </div>
     <!-- Carousel 2d -->
+    <div class="titleAllCarousel">Découvrez notre selection de films en VOD:</div>
+    <div class="separatorCarousel"></div>
+    <div class="titleCarousel">Action</div>
     <div class="wrapper">
-                <div class="responsive slider">
-                    <div class="items"><img src="https://picsum.photos/300/200?random=1" width=90%></div>
-                    <div class="items"><img src="https://picsum.photos/300/200?random=2" width=90%></div>
-                    <div class="items"><img src="https://picsum.photos/300/200?random=3" width=90%></div>
-                    <div class="items"><img src="https://picsum.photos/300/200?random=4" width=90%></div>
-                    <div class="items"><img src="https://picsum.photos/300/200?random=5" width=90%></div>
-                    <div class="items"><img src="https://picsum.photos/300/200?random=6" width=90%></div>
-                </div>
+        <div class="responsive slider">
+            <div class="items">
+                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
+            </div>
+        </div>
     </div>
-
-
-
+    <div class="separatorCarousel"></div>
+    <div class="titleCarousel">Horreur</div>
+    <div class="wrapper">
+        <div class="responsive slider">
+            <div class="items">
+                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
+            </div>
+        </div>
+    </div>
+    <div class="separatorCarousel"></div>
+    <div class="titleCarousel">Thriller</div>
+    <div class="wrapper">
+        <div class="responsive slider">
+            <div class="items">
+                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
+            </div>
+        </div>
+    </div>
+    <div class="separatorCarousel"></div>
+    <div class="titleCarousel">Sci-fi</div>
+    <div class="wrapper">
+        <div class="responsive slider">
+            <div class="items">
+                <div class="items-text" id="1">Titre</div><img src="https://picsum.photos/300/200?random=1" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
+            </div>
+            <div class="items">
+                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
+            </div>
+        </div>
+    </div>
+    <div class="separatorCarousel"></div>
     <?php include("asset/includes/footer.php")?>
 
 
@@ -54,7 +139,6 @@
     <script src="asset/js/films.js"></script>
 
     <script src="asset/js/script.js"></script>
-    <script src="asset/js/script.min.js"></script>
     <script src="asset/js/carousel.js"></script>
 
 

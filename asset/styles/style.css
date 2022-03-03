@@ -1053,6 +1053,36 @@ footer i:hover {
 
 .items {
   width: 50%;
+  position: relative;
+}
+
+.items img {
+  border-radius: 30px;
+}
+.items-text {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  color: white;
+  font-size: 2em;
+}
+.titleAllCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+}
+.separatorCarousel {
+  height: 10vh;
+}
+.titleCarousel {
+  display: flex;
+
+  align-items: center;
+  font-size: 2.6em;
+  padding: 15px 0 15px 10%;
+  color: #faab2e;
 }
 /* Responsive */
 @media only screen and (max-width: 700px) {
@@ -1069,5 +1099,17 @@ footer i:hover {
   }
   .subfooter {
     overflow-y: hidden;
+  }
+
+  .slider .next_arrow {
+    opacity: 0;
+    display: none;
+  }
+  .slider .priv_arrow {
+    opacity: 0;
+    display: none;
+  }
+  .Carousel {
+    display: none;
   }
 }
