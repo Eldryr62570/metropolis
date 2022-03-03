@@ -1,39 +1,42 @@
-const countries = document.querySelector(".countries"),
-  sports = document.querySelector(".sports"),
-  countriesSlider = document.querySelector(".main__slider--countries"),
-  sportsSlider = document.querySelector(".main__slider--sports"),
-  main = document.querySelector(".main");
+$(document).ready(function () {
+  $(".responsive").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow:
+      "<span class='priv_arrow'><i class='fa-solid fa-arrow-left'></i></span>",
+    nextArrow:
+      "<span class='next_arrow'><i class='fa-solid fa-arrow-right'></i></span>",
 
-countries.addEventListener("click", function () {
-  countriesSlider.style.visibility = "visible";
-  sportsSlider.style.visibility = "hidden";
-  main.classList.remove("main--sports");
-  this.classList.add("active");
-  sports.classList.remove("active");
-});
-
-sports.addEventListener("click", function () {
-  countriesSlider.style.visibility = "hidden";
-  sportsSlider.style.visibility = "visible";
-  main.classList.add("main--sports");
-  this.classList.add("active");
-  countries.classList.remove("active");
-});
-
-$(".main__slider").slick({
-  centerMode: true,
-  infinite: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: false,
-  initialSlide: 2,
-  responsive: [
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 1,
-        fade: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
       },
-    },
-  ],
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
 });

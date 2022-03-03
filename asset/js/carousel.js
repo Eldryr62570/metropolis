@@ -18,7 +18,7 @@ texteimage.innerText = titreCarousel[3];
 coverflowImages.forEach(function (coverflowImage, i) {
   coverflowImage.dataset.coverflowIndex = i + 1;
 });
-let coverflowPosition = Math.floor(coverflowImages.length / 2) + 1;
+let coverflowPosition = 1;
 coverflowContainer.dataset.coverflowPosition = coverflowPosition;
 
 //navigation functions

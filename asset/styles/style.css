@@ -1023,42 +1023,34 @@ footer i:hover {
   background-color: #35012c;
 }
 /* Carousel des films */
-.gallery {
-  background: #11001c;
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gallery-cell {
-  width: 66%;
-  height: 500px;
-  margin-right: 10px;
-  background: #8c8;
-  border-radius: 10px;
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 500px;
-  font-size: 80px;
+.slider .next_arrow {
   color: white;
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 3em;
+  transition: all 1s ease-out;
+  border-radius: 50%;
+
+  z-index: 10000;
 }
-/* Page dots */
-/* position dots in carousel */
-.flickity-page-dots {
-  bottom: 0px;
+.slider .priv_arrow {
+  color: white;
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 3em;
+  transition: all 1s ease-out;
+  border-radius: 50%;
+
+  z-index: 10000;
 }
-/*circles */
-.flickity-page-dots .dot {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid white;
-}
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-  background: white;
+
+.items {
+  width: 50%;
 }
