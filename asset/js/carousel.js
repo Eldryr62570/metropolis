@@ -13,7 +13,7 @@ const titreCarousel = [
   "Les évadés",
   "Les 10 anneaux",
 ];
-texteimage.innerText = titreCarousel[3];
+texteimage.innerText = titreCarousel[0];
 //set indicies and initial position
 coverflowImages.forEach(function (coverflowImage, i) {
   coverflowImage.dataset.coverflowIndex = i + 1;

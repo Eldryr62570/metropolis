@@ -19,6 +19,7 @@
     
     <?php include("asset/includes/header.php")?>
     <div class="texteimage">TETESTST</div>
+    <!-- Carousel 3d -->
     <div class="Carousel">
         <div class="coverflow"><a class="prev-arrow"></a><img class="coverflow__image"
                 src="asset/img/img_carousel/matrix.jpg" />
@@ -30,9 +31,8 @@
                 src="asset/img/img_carousel/dixanneaux.jpg" id="6" /><a class="next-arrow"></a>
         </div>
     </div>
-
+    <!-- Carousel 2d -->
     <div class="wrapper">
-        
                 <div class="responsive slider">
                     <div class="items"><img src="https://picsum.photos/300/200?random=1" width=90%></div>
                     <div class="items"><img src="https://picsum.photos/300/200?random=2" width=90%></div>
