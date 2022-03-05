@@ -14,12 +14,14 @@
     <!-- Tabs Titles -->
     <h2 class="inactive underlineHover">Sign Up </h2>
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Confirm password">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="E-mail">
+    <form method="post" action="asset/db/adduser.php">
+      <input type="text" id="login" class="fadeIn second" name="name" placeholder="nom" required>
+      <input type="text" id="login" class="fadeIn second" name="firstname" placeholder="prenom" required>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" required>
+      <input type="password" id="password" class="fadeIn third" name="confirmpassword" placeholder="Confirm password">
+      <input type="mail" id="email" class="fadeIn third" name="email" placeholder="E-mail" required>
       <input type="submit" class="fadeIn fourth" value="Sign up now !">
+
     </form>
 
     <!-- Remind Passowrd -->
