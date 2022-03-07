@@ -42,10 +42,11 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
-                
+        
             </div>
-          
+            <?php 
+                require("asset/db/getallmovie.php");
+            ?>
         </div>
     </div>
     <div class="separatorCarousel"></div>
@@ -53,23 +54,12 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
+                
             </div>
-            <div class="items">
-                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
-            </div>
+            <?php 
+                require("asset/db/getallmovie.php");
+            ?>
+
         </div>
     </div>
     <div class="separatorCarousel"></div>
@@ -77,23 +67,11 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
+            
             </div>
-            <div class="items">
-                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
-            </div>
+            <?php 
+                require("asset/db/getallmovie.php");
+            ?>
         </div>
     </div>
     <div class="separatorCarousel"></div>
@@ -101,23 +79,11 @@
     <div class="wrapper">
         <div class="responsive slider">
             <div class="items">
-                <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
+                
             </div>
-            <div class="items">
-                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" width=90%>
-            </div>
-            <div class="items">
-                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" width=90%>
-            </div>
+            <?php 
+                require("asset/db/getallmovie.php");
+            ?>
         </div>
     </div>
     <div class="separatorCarousel"></div>
@@ -137,7 +103,7 @@
 </body>
 
 </html>
- 
+
 <?php 
         }else{
             header("Location: signin.php");
