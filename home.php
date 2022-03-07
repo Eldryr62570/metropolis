@@ -1,3 +1,9 @@
+<?php 
+    session_start();   
+    if(isset($_SESSION["isConnected"])){
+        if($_SESSION["isConnected"]){
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -144,3 +150,12 @@
 </body>
 
 </html>
+ 
+<?php 
+        }else{
+            header("Location: signin.php");
+        }
+    }else{
+        header("Location: signin.php");
+    }
+?>

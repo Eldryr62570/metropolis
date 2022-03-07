@@ -15,9 +15,9 @@
     <!-- Tabs Titles -->
     <h2 class="inactive underlineHover">Sign In </h2>
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+    <form method="post" action="asset/db/login.php">
+      <input type="mail" id="login" class="fadeIn second" name="mail" placeholder="Email">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 

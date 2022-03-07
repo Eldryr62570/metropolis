@@ -1,10 +1,10 @@
 <div class="header" id="header">
-    <a href="#">
+    <a href="signin.php">
         <div class="button">
            Sign In
         </div>
     </a>
-    <a href="#">
+    <a href="signup.php">
         <div class="button">
            Sign up
         </div>
