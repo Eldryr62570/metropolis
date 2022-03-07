@@ -17,13 +17,13 @@
         
     }
     
-    $sqlRequest = "INSERT INTO `user` (`nom_user`, `prenom_user`, `mdp_users`, `mail_users`, `id_role`) 
+    $sqlRequest = "INSERT INTO `user` (`nom_user`, `prenom_user`, `mdp_user`, `mail_user`, `id_role`) 
                     VALUES (?,?,?,?,'1');";
     $pdoStat = $dbh -> prepare($sqlRequest);
     $pdoStat->execute(array($name,$firstname,$password,$email));
 
     header("Location: ../../signup.php");
-  
+    
     
 
 
