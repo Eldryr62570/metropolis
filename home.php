@@ -43,22 +43,9 @@
         <div class="responsive slider">
             <div class="items">
                 <div class="items-text" id="1">Titre</div><img src="asset/img/avangers.jpg" >
+                
             </div>
-            <div class="items">
-                <div class="items-text" id="2">Titre</div><img src="https://picsum.photos/300/200?random=2" >
-            </div>
-            <div class="items">
-                <div class="items-text" id="3">Titre</div><img src="https://picsum.photos/300/200?random=3" >
-            </div>
-            <div class="items">
-                <div class="items-text" id="4">Titre</div><img src="https://picsum.photos/300/200?random=4" >
-            </div>
-            <div class="items">
-                <div class="items-text" id="5">Titre</div><img src="https://picsum.photos/300/200?random=5" >
-            </div>
-            <div class="items">
-                <div class="items-text" id="6">Titre</div><img src="https://picsum.photos/300/200?random=6" >
-            </div>
+          
         </div>
     </div>
     <div class="separatorCarousel"></div>
