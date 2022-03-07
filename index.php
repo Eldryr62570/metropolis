@@ -1,3 +1,8 @@
+<?php 
+    session_start();  
+    $_SESSION["isConnected"] = false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

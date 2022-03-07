@@ -1,5 +1,5 @@
 <div class="header_connected" id="header">
-    <a href="#">
+    <a href="asset/db/logout.php">
         <div class="button">
            Log Out
         </div>
