@@ -3,11 +3,11 @@
     session_start();
     $_SESSION["isConnected"] =false;
     if(isset($_POST)){
-        if(isset($_POST["mail"])){
-            $mail = $_POST["mail"];
+        if((isset($_POST["mail"])) && (!empty($_POST["mail"]))){
+            $mail = htmlspecialchars($_POST["mail"]);
         }
         if(isset($_POST["password"])){
-            $password = $_POST["password"];
+            $password = mb5(htmlspecialchars($_POST["password"]));
         }
     }
 

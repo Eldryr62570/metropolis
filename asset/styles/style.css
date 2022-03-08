@@ -1079,6 +1079,7 @@ footer i:hover {
 .items img {
   border-radius: 30px;
   width: 90%;
+  cursor: pointer;
 }
 .items-text {
   position: absolute;
