@@ -78,7 +78,7 @@
     )ENGINE=InnoDB;";
     echo "Table possede created".PHP_EOL;
     $dbh ->exec($sql);
-
+// Table participe
     $sql = "CREATE TABLE Participe(
             id_acteur Int NOT NULL ,
             id_film   Int NOT NULL
