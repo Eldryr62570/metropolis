@@ -2,6 +2,7 @@
     session_start();   
     if(isset($_SESSION["isConnected"])){
         if($_SESSION["isConnected"]){
+            require("asset/db/getallmovie.php");
     ?>
 
 <!DOCTYPE html>
@@ -40,12 +41,16 @@
     <div class="separatorCarousel"></div>
     <div class="titleCarousel">Action</div>
     <div class="wrapper">
-        <div class="responsive slider">
-            <div class="items">
-        
-            </div>
+        <div class="responsive slider">           
             <?php 
-                require("asset/db/getallmovie.php");
+            
+                foreach ($result as $value) {
+                    ?>
+                        <div class="items">
+                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
+                        </div>
+                    <?php
+                    }
             ?>
         </div>
     </div>
@@ -53,11 +58,16 @@
     <div class="titleCarousel">Horreur</div>
     <div class="wrapper">
         <div class="responsive slider">
-            <div class="items">
-                
-            </div>
+            
             <?php 
-                require("asset/db/getallmovie.php");
+         
+                foreach ($result as $value) {
+                    ?>
+                        <div class="items">
+                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
+                        </div>
+                    <?php
+                    }
             ?>
 
         </div>
@@ -66,11 +76,16 @@
     <div class="titleCarousel">Thriller</div>
     <div class="wrapper">
         <div class="responsive slider">
-            <div class="items">
-            
-            </div>
+        
             <?php 
-                require("asset/db/getallmovie.php");
+            
+                foreach ($result as $value) {
+                    ?>
+                        <div class="items">
+                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
+                        </div>
+                    <?php
+                    }
             ?>
         </div>
     </div>
@@ -78,11 +93,15 @@
     <div class="titleCarousel">Sci-fi</div>
     <div class="wrapper">
         <div class="responsive slider">
-            <div class="items">
-                
-            </div>
+          
             <?php 
-                require("asset/db/getallmovie.php");
+                foreach ($result as $value) {
+                    ?>
+                        <div class="items">
+                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
+                        </div>
+                    <?php
+                    }
             ?>
         </div>
     </div>
