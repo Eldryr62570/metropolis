@@ -7,7 +7,7 @@
             $mail = htmlspecialchars($_POST["mail"]);
         }
         if(isset($_POST["password"])){
-            $password = mb5(htmlspecialchars($_POST["password"]));
+            $password = md5(htmlspecialchars($_POST["password"]));
         }
     }
 

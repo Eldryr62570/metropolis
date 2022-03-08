@@ -16,16 +16,24 @@
     }else{
         //Erreur
     }
-    
-    $sqlRequest = "INSERT INTO `user` (`id_user`, `nom_user`, `prenom_user`, `mail_user`, `mdp_user`, `id_role`) 
+    $stmt = $dbh->prepare("SELECT * FROM user WHERE mail_user=?");
+    $stmt->execute([$email]); 
+    $user = $stmt->fetch();
+    if(!$user){
+        $sqlRequest = "INSERT INTO `user` (`id_user`, `nom_user`, `prenom_user`, `mail_user`, `mdp_user`, `id_role`) 
                 VALUES (NULL, ?, ?, ?, ?, '1')";
-    $pdoStat = $dbh -> prepare($sqlRequest);
-    
-    $pdoStat->execute([$name,$firstname,$email,$password]);
+        $pdoStat = $dbh -> prepare($sqlRequest);  
+        $pdoStat->execute([$name,$firstname,$email,$password]);
+        header("Location: ../../signin.php");
+    }else{
+        header("Location: ../../signup.php");
+    }
 
-    header("Location: ../../signup.php");
+
+
+
+    
     
     
 
 
-    echo($name);
