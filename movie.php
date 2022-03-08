@@ -1,3 +1,7 @@
+<?php session_start(); 
+    require("asset/db/getonemovie.php")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,32 +17,24 @@
 <body>
     <?php include("asset/includes/header.php")?>
     <section class="movieTitleContainer">
-        <div class="moveTitle">
+        <div class="moveTitle" style="background-image: url(<?php echo $result["image_url"]?>);">
             <div class="filterTitle">
-                <div class="title">Avangers</div>
+                <div class="title"><?php echo $result["titre_film"]?></div>
                 <div class="synopsis">
                     <br>
                     <br>
                     Synopsis :
                     <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a odit accusantium
-                    magni exercitationem temporibus vel praesentium. Ipsam consectetur accusamus inventore reiciendis
-                    optio a officia, nihil ex! Ullam, fugiat obcaecati.
-                    Impedit eveniet quos quas corporis. Magnam molestiae, ipsa assumenda neque cum, nulla impedit nam
-                    laborum voluptatem, adipisci aperiam provident iste! Similique facilis qui facere iure eligendi
-                    magnam, optio commodi dolores.
-                   
-                    Rem laboriosam expedita consectetur doloribus eligendi, dolorem enim cumque voluptate error
-                    doloremque tempora veritatis voluptatem, at optio repellendus consequatur quo corrupti! Corrupti,
-                    fugiat earum. Nobis fuga ipsa expedita optio nesciunt.
-                    Rem modi facilis quos quam voluptatum, mollitia, natus numquam, nam dolore nobis porro
-                    exercitationem! Placeat beatae quaerat saepe laboriosam modi nesciunt nemo culpa eius. Nobis
-                    voluptates repellat quia dolorem ea.
+                    <?php echo $result["sysnopsis"]?>
                 </div>
             </div>
         </div>
         <div class="movieSynopsis"></div>
         <div class="author"></div>
+    </section>
+    <section class="vidMovie">
+        
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/<?php echo $result["video_url"]?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <?php include("asset/includes/footer.php")?>

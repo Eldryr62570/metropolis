@@ -1279,3 +1279,9 @@ footer i:hover {
 }
 .movieSynopsis {
 }
+.vidMovie {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

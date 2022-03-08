@@ -41,15 +41,16 @@
     <div class="separatorCarousel"></div>
     <div class="titleCarousel">Action</div>
     <div class="wrapper">
-        <div class="responsive slider">           
+        <div class="responsive slider">
             <?php 
             
                 foreach ($result as $value) {
                     ?>
-                        <div class="items">
-                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
-                        </div>
-                    <?php
+            <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
+                <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
+                <img src="<?php echo $value["image_url"]?>">
+            </div>
+            <?php
                     }
             ?>
         </div>
@@ -58,15 +59,16 @@
     <div class="titleCarousel">Horreur</div>
     <div class="wrapper">
         <div class="responsive slider">
-            
+
             <?php 
          
                 foreach ($result as $value) {
                     ?>
-                        <div class="items">
-                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
-                        </div>
-                    <?php
+            <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
+                <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
+                <img src="<?php echo $value["image_url"]?>">
+            </div>
+            <?php
                     }
             ?>
 
@@ -76,15 +78,16 @@
     <div class="titleCarousel">Thriller</div>
     <div class="wrapper">
         <div class="responsive slider">
-        
+
             <?php 
             
                 foreach ($result as $value) {
                     ?>
-                        <div class="items">
-                                    <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>">
-                        </div>
-                    <?php
+            <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
+                <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
+                <img src="<?php echo $value["image_url"]?>">
+            </div>
+            <?php
                     }
             ?>
         </div>
@@ -93,14 +96,15 @@
     <div class="titleCarousel">Sci-fi</div>
     <div class="wrapper">
         <div class="responsive slider">
-          
+
             <?php 
                 foreach ($result as $value) {
                     ?>
-                        <div class="items">
-                                    <a href=""><div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div><img src="<?php echo $value["image_url"]?>"></a>
-                        </div>
-                    <?php
+            <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
+                <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
+                <img src="<?php echo $value["image_url"]?>">
+            </div>
+            <?php
                     }
             ?>
         </div>
