@@ -193,6 +193,7 @@ footer {
   display: grid;
   grid-template-rows: 15% 25% 60%;
 }
+
 footer i {
   padding: 10px 30px 0 0;
   transition: 250ms ease-in-out;

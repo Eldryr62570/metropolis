@@ -48,7 +48,7 @@
             <?php 
             
                 foreach ($result as $value) {
-                    if($value["nom_genre"] == "Thriller"){
+                    if($value["nom_genre"] == $value2["nom_genre"]){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
