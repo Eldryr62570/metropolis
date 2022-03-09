@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).on("load", function () {
   $(".responsive").slick({
     dots: false,
     infinite: true,

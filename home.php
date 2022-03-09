@@ -49,9 +49,11 @@
                     if($value["nom_genre"] == "Action"){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
+
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
                 <img src="<?php echo $value["image_url"]?>">
             </div>
+            
             <?php
                     }
                 }
@@ -92,7 +94,12 @@
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
-                <img src="<?php echo $value["image_url"]?>">
+                <div class="filter_black">
+                    <div class="height_carousel">
+                        <div class="texte_description_synopsis">Synopsis : <br><br> <?php echo $value["sysnopsis"] ?></div>
+                    </div>
+                    
+                    </div>
             </div>
             <?php
                     }
@@ -110,7 +117,10 @@
                     if($value["nom_genre"] == "Sci-fi"){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
-                <div class="items-text" id="<?php echo $value["id_film"] ?>" style=""><?php echo $value["titre_film"] ?><div>Synopsis lorem ipsum </div></div>
+                <div class="items-text" id="<?php echo $value["id_film"] ?>" >
+                    <?php echo $value["titre_film"]?>  
+                </div>
+                
                 <img src="<?php echo $value["image_url"]?>">
             </div>
             <?php
@@ -125,6 +135,7 @@
 
 
     <script src="asset/js/slick.js"></script>
+    <script src="asset/js/slick.min.js"></script>
 
     <script src="asset/js/films.js"></script>
 

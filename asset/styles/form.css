@@ -58,7 +58,7 @@ h2 {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  text-transform: uppercase;
+
   display: inline-block;
   margin: 40px 8px 10px 8px;
   color: #cccccc;
@@ -125,7 +125,6 @@ input[type="password"] {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  text-transform: uppercase;
   font-size: 13px;
   -webkit-box-shadow: 0 10px 30px 0 #11001c69;
   box-shadow: 0 10px 30px 0 #11001c81;
@@ -174,10 +173,9 @@ input[type="password"] {
   color: #0d0d0d;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 5px;
+  margin: 20px;
   width: 85%;
   border: 2px solid #f6f6f6;
   -webkit-transition: all 0.5s ease-in-out;
