@@ -1087,7 +1087,9 @@ footer i:hover {
   top: 0;
   color: white;
   font-size: 2em;
+  transition: all 0.5s ease-in-out;
 }
+
 .titleAllCarousel {
   display: flex;
   justify-content: center;

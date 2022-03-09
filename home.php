@@ -3,6 +3,7 @@
     if(isset($_SESSION["isConnected"])){
         if($_SESSION["isConnected"]){
             require("asset/db/getallmovie.php");
+            
     ?>
 
 <!DOCTYPE html>
@@ -45,6 +46,7 @@
             <?php 
             
                 foreach ($result as $value) {
+                    if($value["nom_genre"] == "Action"){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
@@ -52,6 +54,7 @@
             </div>
             <?php
                     }
+                }
             ?>
         </div>
     </div>
@@ -63,13 +66,16 @@
             <?php 
          
                 foreach ($result as $value) {
+                    if($value["nom_genre"] == "Horreur"){
                     ?>
+                    
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
                 <img src="<?php echo $value["image_url"]?>">
             </div>
             <?php
                     }
+                }
             ?>
 
         </div>
@@ -82,6 +88,7 @@
             <?php 
             
                 foreach ($result as $value) {
+                    if($value["nom_genre"] == "Thriller"){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
@@ -89,6 +96,7 @@
             </div>
             <?php
                     }
+                }
             ?>
         </div>
     </div>
@@ -99,13 +107,15 @@
 
             <?php 
                 foreach ($result as $value) {
+                    if($value["nom_genre"] == "Sci-fi"){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
-                <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
+                <div class="items-text" id="<?php echo $value["id_film"] ?>" style=""><?php echo $value["titre_film"] ?><div>Synopsis lorem ipsum </div></div>
                 <img src="<?php echo $value["image_url"]?>">
             </div>
             <?php
                     }
+                }
             ?>
         </div>
     </div>

@@ -3,7 +3,7 @@ $(document).ready(function () {
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow:
       "<span class='priv_arrow'><i class='fa-solid fa-arrow-left'></i></span>",
@@ -14,7 +14,7 @@ $(document).ready(function () {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
