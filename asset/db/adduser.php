@@ -26,7 +26,7 @@
         $pdoStat->execute([$name,$firstname,$email,$password]);
         header("Location: ../../signin.php");
     }else{
-        header("Location: ../../signup.php");
+        header("Location: ../../signup.php?error");
     }
     
 

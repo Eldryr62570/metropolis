@@ -328,3 +328,9 @@ input[type="text"]:placeholder {
     width: 30vw;
   }
 }
+/* Backend message erreur ect */
+
+.error {
+  color: rgb(133, 0, 0);
+  font-size: 1.1em;
+}

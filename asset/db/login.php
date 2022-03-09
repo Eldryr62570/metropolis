@@ -16,15 +16,15 @@
     $pdoStat = $dbh -> prepare($sqlRequest);
     $pdoStat->execute(array($mail,$password));
 //    Créer un tableau associatif
-    $result = $pdoStat->fetchAll(PDO::FETCH_ASSOC);
+    $result = $pdoStat->fetch(PDO::FETCH_ASSOC);
     // On vérifie si on trouve notre utilisateur en dbb
     if($result){
-        $_SESSION["id_user"] = $result[0]["id_user"];
-        $_SESSION["prenom_user"] = $result[0]["prenom_user"];
+        $_SESSION["id_user"] = $result["id_user"];
+        $_SESSION["prenom_user"] = $result["prenom_user"];
         $_SESSION["isConnected"] = true;
         header("Location: ../../home.php");
     }else{
 
-        header("Location: ../../signin.php");
+        header("Location: ../../signin.php?error");
     }
     

@@ -1277,8 +1277,7 @@ footer i:hover {
   justify-self: center;
   cursor: default;
 }
-.movieSynopsis {
-}
+
 .vidMovie {
   height: 100vh;
   display: flex;

@@ -23,7 +23,7 @@
                 <div class="synopsis">
                     <br>
                     <br>
-                    Synopsis :
+                        Synopsis :
                     <br>
                     <?php echo $result["sysnopsis"]?>
                 </div>

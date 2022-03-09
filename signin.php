@@ -9,6 +9,9 @@
 </head>
 <body>
 <?php include("asset/includes/header_visitor.php") ?>
+
+  
+
 <div class="wrapper fadeInDown">
   <div id="formContent">
       
@@ -20,8 +23,11 @@
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
-
-    
+    <?php if(isset($_GET["error"])){?>
+      <div class="error_container">
+        <div class="error">Login ou mot de passe incorrect !</div>
+      </div>
+    <?php }?>
 
   </div>
 </div>
