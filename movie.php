@@ -1,5 +1,7 @@
 <?php session_start(); 
-    require("asset/db/getonemovie.php")
+    require("asset/db/getonemovie.php");
+    if(isset($_SESSION["isConnected"])){
+        if($_SESSION["isConnected"]){
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/styles/style.css">
     <script src="https://kit.fontawesome.com/31b5087217.js" crossorigin="anonymous"></script>
-    <title>Movie</title>
+<title><?php echo $result['titre_film']; ?></title>
 </head>
 
 <body>
@@ -42,3 +44,11 @@
 </body>
 
 </html>
+<?php 
+        }else{
+            header("Location: signin.php");
+        }
+    }else{
+        header("Location: signin.php");
+    }
+?>

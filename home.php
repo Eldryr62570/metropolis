@@ -44,26 +44,22 @@
     <div class="titleCarousel"><?php echo $value2["nom_genre"] ?></div>
     <div class="wrapper">
         <div class="responsive slider">
-
             <?php 
-            
                 foreach ($result as $value) {
                     if($value["nom_genre"] == $value2["nom_genre"]){
                     ?>
             <div class="items" onclick="window.location.href='movie.php?id=<?php echo $value['id_film'] ?>'">
                 <div class="items-text" id="<?php echo $value["id_film"] ?>"><?php echo $value["titre_film"] ?></div>
-                <div class="filter_black">
-                    <div class="height_carousel">
-                        <div class="texte_description_synopsis">Synopsis : <br><br> <?php echo $value["sysnopsis"] ?></div>
-                    </div>
-                    
-                    </div>
+                <div class="filter_black" style="background-image: url(<?php echo $value["image_url"]?>);"> <div class="height_carousel">
+                    <div class="texte_description_synopsis">Synopsis : <br><br> <?php echo $value["sysnopsis"] ?></div>
+                </div>
             </div>
-            <?php
+        </div>
+        <?php
                     }
                 }
             ?>
-        </div>
+    </div>
     </div>
     <div class="separatorCarousel"></div>
     <?php }?>
