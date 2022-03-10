@@ -12,6 +12,7 @@
  <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
+    
     <h2 class="inactive underlineHover">Sign Up </h2>
     <!-- Login Form -->
     <form method="post" action="asset/db/adduser.php">
@@ -20,6 +21,11 @@
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" required>
       <input type="password" id="password" class="fadeIn third" name="confirmpassword" placeholder="Confirm password">
       <input type="mail" id="email" class="fadeIn third" name="email" placeholder="E-mail" required>
+      <?php if(isset($_GET["error"])){?>
+      <div class="error_container">
+        <div class="error">Email déja utilisée !</div>
+      </div>
+    <?php }?>
       <input type="submit" class="fadeIn fourth" value="Sign up now !">
     </form>
 
@@ -27,11 +33,7 @@
     <div id="formFooter">
       <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
-    <?php if(isset($_GET["error"])){?>
-      <div class="error_container">
-        <div class="error">Email déja utilisée !</div>
-      </div>
-    <?php }?>
+    
   </div>
 </div>
 <script src="asset/js/script.js"></script>

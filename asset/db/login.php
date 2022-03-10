@@ -12,7 +12,7 @@
     }
 
     
-    $sqlRequest = "SELECT mail_user , mdp_user , id_user, prenom_user FROM user WHERE mail_user = ? AND mdp_user = ?";
+    $sqlRequest = "SELECT mail_user , mdp_user , id_user, prenom_user,id_role FROM user WHERE mail_user = ? AND mdp_user = ?";
     $pdoStat = $dbh -> prepare($sqlRequest);
     $pdoStat->execute(array($mail,$password));
 //    Créer un tableau associatif
@@ -22,6 +22,8 @@
         $_SESSION["id_user"] = $result["id_user"];
         $_SESSION["prenom_user"] = $result["prenom_user"];
         $_SESSION["isConnected"] = true;
+        $_SESSION["id_role"] = $result["id_role"];
+        
         header("Location: ../../home.php");
     }else{
 

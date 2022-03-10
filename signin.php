@@ -13,8 +13,9 @@
   
 
 <div class="wrapper fadeInDown">
+  
   <div id="formContent">
-      
+    
     <!-- Tabs Titles -->
     <h2 class="inactive underlineHover">Sign In </h2>
     <!-- Login Form -->
@@ -28,6 +29,14 @@
         <div class="error">Login ou mot de passe incorrect !</div>
       </div>
     <?php }?>
+    <?php if(isset($_GET["success"])){
+            if($_GET["success"]){
+      ?>
+      <div class="success_container">
+        <div class=success">Vous êtes bien inscrit veuillez vous identifier</div>
+      </div>
+    <?php }
+  }?>
 
   </div>
 </div>

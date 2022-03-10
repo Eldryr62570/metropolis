@@ -67,3 +67,25 @@
   grid-template-columns: repeat(6, minmax(16.666%, 30%));
   grid-template-rows: 100%;
 }
+.button_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.button_add:hover {
+  background-color: black;
+  color: white;
+}
+.success {
+  color: green;
+}
+.success_container {
+  color: green;
+}

@@ -24,20 +24,16 @@
     <div class="wrapper fadeInDown">
         <div id="formContent">
             <!-- Tabs Titles -->
-            <h2 class="inactive underlineHover">Modifier Utilisateur</h2>
+            <h2 class="inactive underlineHover">Ajouter l'utilisateur</h2>
             <!-- Update Form -->
-            <form method="post" action="asset/db/updateUserTraitement">
+            <form method="post" action="asset/db/addUserAdmin.php">
                 <input type="text" id="login" class="fadeIn second" name="name" placeholder="nom" required>
                 <input type="text" id="login" class="fadeIn second" name="firstname" placeholder="prenom" required>
                 <input type="mail" id="email" class="fadeIn third" name="email" placeholder="E-mail" required>
-                <input id="id_user" name="id_user" type="hidden" value=<?php echo $_GET["id_user"] ?>>
-                <label for="role">Role : </label>
-                <select name="id_role" id="id_role" required>
-                    <option value="">Veuillez choisir le role de l'utilisateur</option>
-                    <option value="1">Utilisateur</option>
-                    <option value="2">Administrateur</option>
-                </select>
-                <input type="submit" class="fadeIn fourth" value="Update User">
+                <input type="password" id="email" class="fadeIn third" name="password" placeholder="Password" required>
+                
+                
+                <input type="submit" class="fadeIn fourth" value="Ajouter l'utilisateur">
                 
             </form>
 

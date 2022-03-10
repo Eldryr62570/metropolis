@@ -1,6 +1,7 @@
 <?php 
     session_start(); 
     require("asset/db/getallusers.php");
+    if($_SESSION["id_role"] == 2){
 
 ?>
 
@@ -22,6 +23,7 @@
         
         <div class="card_panel_title">
             <h2>Utilisateurs</h2>
+            <a href="addUserForm.php"><div class="button_add">+</div></a>
             <div class="user_case">
                <div>Id user</div>
                <div>Nom</div>
@@ -48,6 +50,10 @@
                 </div>
             </div>
         <?php }?>
+        <?php }
+        
+        else{header("Location:index.php");}
+?>
         
 </body>
 </html>
