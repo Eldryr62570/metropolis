@@ -42,7 +42,7 @@
                    <div><?php echo $row["mail_user"]?></div>
                    <div><?php echo $row["nom_role"]?></div>
                    <div class="ButtonContainer">
-                        <a href="#" class="modifyUser"><i class="fa-solid fa-pen"></i></a>
+                        <a href="updateuser.php?id_user=<?php echo $row["id_user"]?>" class="modifyUser"><i class="fa-solid fa-pen"></i></a>
                         <a href="asset/db/deleteuser.php?id_user=<?php echo $row["id_user"]?>" class="deleteUser"><i class="fa-solid fa-trash"></i></a>
                    </div>
                 </div>
