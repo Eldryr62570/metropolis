@@ -31,7 +31,12 @@
                 </div>
             </div>
         </div>
-        <div class="movieSynopsis"></div>
+        <div class="movieSynopsis">
+            <a href="asset/db/addFavorite?id_film=<?php echo $result["id_film"]?>"><i class="fa-solid fa-star"></i></a>
+        </div>
+        <div class="movieSynopsis active">
+            <a href="asset/db/addFavorite?id_film=<?php echo $result["id_film"]?>"><i class="fa-solid fa-star active"></i></a>
+        </div>
         <div class="author"></div>
     </section>
     <section class="vidMovie">
