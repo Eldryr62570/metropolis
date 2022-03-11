@@ -33,7 +33,7 @@
             if($_GET["success"]){
       ?>
       <div class="success_container">
-        <div class=success">Vous êtes bien inscrit veuillez vous identifier</div>
+        <div class=success>Vous êtes bien inscrit veuillez vous identifier</div>
       </div>
     <?php }
   }?>
