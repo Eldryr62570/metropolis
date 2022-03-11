@@ -332,3 +332,6 @@ input[type="text"]:placeholder {
   color: rgb(133, 0, 0);
   font-size: 1.1em;
 }
+.success {
+  color: green;
+}

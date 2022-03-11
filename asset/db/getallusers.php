@@ -7,6 +7,6 @@ $sqlRequest = "SELECT id_user,nom_user,prenom_user,mail_user,user.id_role,role.i
 
 $pdoStat = $dbh -> prepare($sqlRequest);
 $pdoStat ->execute();
-$result = $pdoStat->fetchAll(PDO::FETCH_ASSOC);
+$alluser = $pdoStat->fetchAll(PDO::FETCH_ASSOC);
 
 ?>

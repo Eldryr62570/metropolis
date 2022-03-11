@@ -64,9 +64,14 @@
   background-color: rgba(255, 255, 255, 0);
   height: 75px;
   display: grid;
-  grid-template-columns: repeat(6, minmax(16.666%, 30%));
+  grid-template-columns: repeat(6, minmax(16.666%, 25%));
+  overflow: hidden;
   grid-template-rows: 100%;
 }
+.user_case div {
+  overflow: hidden;
+}
+
 .button_add {
   display: flex;
   justify-content: center;
@@ -83,6 +88,7 @@
   background-color: black;
   color: white;
 }
-.success {
-  color: green;
+
+.synopsis {
+  overflow: hidden;
 }

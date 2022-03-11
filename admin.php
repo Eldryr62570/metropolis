@@ -1,6 +1,7 @@
 <?php 
     session_start(); 
     require("asset/db/getallusers.php");
+    require("asset/db/getallmovie.php");
     if($_SESSION["id_role"] == 2){
 
 ?>
@@ -19,6 +20,7 @@
 </head>
 <body>
     <?php require("asset/includes/header.php"); ?>
+    <!-- User crud -->
     <div class="card_panel_container">
         
         <div class="card_panel_title">
@@ -34,7 +36,7 @@
                
             </div>
         </div>
-        <?php foreach($result as $row){?>
+        <?php foreach($alluser as $row){?>
             <div class="card_panel">
 
                 <div class="user_case">
@@ -49,11 +51,51 @@
                    </div>
                 </div>
             </div>
-        <?php }?>
-        <?php }
+    
+
         
+
+  
+        <?php }?>
+
+        <div class="card_panel_title">
+            <h2>Films</h2>
+            <a href="addFilmForm.php"><div class="button_add">+</div></a>
+            <div class="user_case">
+               <div>Id_film</div>
+               <div>titre_film</div>
+               <div>video Url</div>
+               <div>image_url</div>
+               <div>Genre</div>  
+               <div>Administration</div>
+               
+               
+            </div>
+        </div>
+        <?php foreach($result as $row2){?>
+            <div class="card_panel">
+
+                <div class="user_case">
+                   <div><?php echo $row2["id_film"]?></div>
+                   <div><?php echo $row2["titre_film"]?></div>
+                   <div><?php echo $row2["video_url"]?></div>
+                   <div><?php echo $row2["image_url"]?></div>
+                   <div><?php echo $row2["nom_genre"]?></div>
+                   <div class="ButtonContainer">
+                        <a href="" class="modifyUser"><i class="fa-solid fa-pen"></i></a>
+                        <a href="" class="deleteUser"><i class="fa-solid fa-trash"></i></a>
+                   </div>
+                </div>
+            </div>
+    
+
+        
+
+  
+        <?php }?>
+
+        <?php }
         else{header("Location:index.php");}
 ?>
-        
 </body>
 </html>
