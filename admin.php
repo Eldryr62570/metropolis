@@ -82,8 +82,8 @@
                    <div><?php echo $row2["image_url"]?></div>
                    <div><?php echo $row2["nom_genre"]?></div>
                    <div class="ButtonContainer">
-                        <a href="" class="modifyUser"><i class="fa-solid fa-pen"></i></a>
-                        <a href="" class="deleteUser"><i class="fa-solid fa-trash"></i></a>
+                        <a href="updatefilmForm.php?id_film=<?php echo $row2["id_film"] ?>" class="modifyUser"><i class="fa-solid fa-pen"></i></a>
+                        <a href="asset/db/deletefilm.php?id_film=<?php echo $row2["id_film"]?>" class="deleteUser"><i class="fa-solid fa-trash"></i></a>
                    </div>
                 </div>
             </div>
