@@ -18,14 +18,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="asset/styles/style.css">
     <link rel="stylesheet" href="asset/styles/slick.css">
-    <script src="https://kit.fontawesome.com/31b5087217.js" crossorigin="anonymous"></script>
     <title>VOD - Metropolis</title>
 </head>
 
 <body>
 
     <?php include("asset/includes/header.php")?>
-    <div class="texteimage">TETESTST</div>
+    <div class="texteimage">Loading ...</div>
     <!-- Carousel 3d -->
     <div class="Carousel">
         <div class="coverflow"><a class="prev-arrow"></a><img class="coverflow__image"

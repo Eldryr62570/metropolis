@@ -13,13 +13,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/31b5087217.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="asset/styles/style.css">
+    <link rel="stylesheet" href="asset/styles/slick.css">
     <title>Mes favoris</title>
 </head>
 <body>
     <?php require("asset/includes/header.php");?>
 
-
+    
     <div class="separatorCarousel"></div>
     <div class="titleCarousel">Mes favoris</div>
     <div class="wrapper">
@@ -47,6 +50,7 @@
     <script src="asset/js/slick.min.js"></script>
     <script src="asset/js/films.js"></script>
     <script src="asset/js/script.js"></script>
+    <script src="asset/js/carousel.js"></script>
 </body>
 </html>
 

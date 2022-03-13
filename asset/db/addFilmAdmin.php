@@ -14,7 +14,8 @@ require("connectdb.php");
                     VALUES (NULL, ? , ? , ?, ?) ";
     $pdoStat = $dbh -> prepare($sqlRequest);  
     $pdoStat->execute([$title,$synopsis,$urlvid,$urlimg]);
-
+    
+    // J'avoue c'est abusé
     $sqlRequest  = "SELECT id_film FROM film ORDER BY id_film DESC LIMIT 1";
     $pdoStat = $dbh -> prepare($sqlRequest); 
     $pdoStat->execute();
