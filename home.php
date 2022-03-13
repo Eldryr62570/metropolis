@@ -66,13 +66,9 @@
 
     <?php include("asset/includes/footer.php")?>
 
-
-
     <script src="asset/js/slick.js"></script>
     <script src="asset/js/slick.min.js"></script>
-
     <script src="asset/js/films.js"></script>
-
     <script src="asset/js/script.js"></script>
     <script src="asset/js/carousel.js"></script>
 

@@ -1,5 +1,6 @@
 <?php session_start(); 
     require("asset/db/getonemovie.php");
+    require("asset/db/lireFavoris.php");
     if(isset($_SESSION["isConnected"])){
         if($_SESSION["isConnected"]){
 ?>
@@ -31,12 +32,22 @@
                 </div>
             </div>
         </div>
-        <div class="movieSynopsis">
-            <a href="asset/db/addFavorite?id_film=<?php echo $result["id_film"]?>"><i class="fa-solid fa-star"></i></a>
-        </div>
-        <div class="movieSynopsis active">
-            <a href="asset/db/addFavorite?id_film=<?php echo $result["id_film"]?>"><i class="fa-solid fa-star active"></i></a>
-        </div>
+            <?php 
+                if(empty($isFavoris)){
+            
+            ?>
+                <div class="movieSynopsis">
+                    <div>Ajouter aux favoris ?</div>
+                    <a href="asset/db/addFavorite?id_film=<?php echo $result["id_film"]?>"><i class="fa-solid fa-star"></i></a>
+                </div>
+            <?php }else{?>
+                    
+                <div class="movieSynopsis active">
+                    <div class="textFav"><?php echo $result["titre_film"]?> est dans votre liste de favoris</div>
+                    <a href="asset/db/addFavorite?id_film=<?php echo $result["id_film"]?>"><i class="fa-solid fa-star active"></i></a>
+                </div>
+        <?php }?>
+
         <div class="author"></div>
     </section>
     <section class="vidMovie">

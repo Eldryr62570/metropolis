@@ -11,14 +11,17 @@
     $pdoStat->execute(array($id_film,$id_user));    
 
     $result = $pdoStat->fetch(PDO::FETCH_ASSOC);
+    //Si le film est déja en favoris ...
     if($result){
         $sqlRequest = "DELETE FROM `favoris` WHERE `favoris`.`id_film` = ? AND `favoris`.`id_user` = ?";
-        $pdoStat = $bdh ->prepare($sqlRequest);
-        $pdoStat ->execute([$id_film,$id_user]);
-    }else{
-        $sqlRequest = "INSERT INTO `favoris` (`id_film`, `id_user`) VALUES (? , ?)";
-        $pdoStat = $bdh ->prepare($sqlRequest);
+        $pdoStat = $dbh ->prepare($sqlRequest);
         $pdoStat ->execute([$id_film,$id_user]);
     }
-    var_dump($result);
-    die;
+    //sinon on l'ajoute
+    else{
+        $sqlRequest = "INSERT INTO `favoris` (`id_film`, `id_user`) VALUES (? , ?)";
+        $pdoStat = $dbh ->prepare($sqlRequest);
+        $pdoStat ->execute([$id_film,$id_user]);
+    }
+    $addr = "Location: ../../movie.php?id=".$id_film;
+    header($addr);
