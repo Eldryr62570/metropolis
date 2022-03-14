@@ -1,0 +1,94 @@
+.card_panel_container {
+  margin-top: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card_panel {
+  font-family: Titi;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.733);
+}
+.user_case {
+  width: 90%;
+  background-color: rgba(255, 255, 255);
+  height: 75px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(16.666%, 30%));
+  grid-template-rows: 100%;
+}
+.user_case div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ButtonContainer {
+  color: black;
+  font-size: 2em;
+}
+.ButtonContainer a {
+  height: fit-content;
+  padding: 10px;
+}
+.modifyUser {
+  color: orange;
+  height: fit-content;
+}
+.modifyUser:hover {
+  color: rgb(151, 98, 0);
+}
+.deleteUser {
+  color: red;
+  height: fit-content;
+}
+.deleteUser:hover {
+  color: rgb(112, 0, 0);
+}
+.card_panel_title {
+  font-family: Titi;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.733);
+}
+.card_panel_title .user_case {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0);
+  height: 75px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(16.666%, 25%));
+  overflow: hidden;
+  grid-template-rows: 100%;
+}
+.user_case div {
+  overflow: hidden;
+}
+
+.button_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.button_add:hover {
+  background-color: black;
+  color: white;
+}
+
+.synopsis {
+  overflow: hidden;
+}
