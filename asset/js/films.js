@@ -3,7 +3,7 @@ $(window).on("load", function () {
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
       "<span class='priv_arrow'><i class='fa-solid fa-arrow-left'></i></span>",
@@ -14,7 +14,7 @@ $(window).on("load", function () {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
